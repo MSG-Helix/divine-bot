@@ -1,1 +1,1 @@
-worker: python Bot.py
+worker: python Divine-Bot.py
