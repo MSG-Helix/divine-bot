@@ -14,7 +14,7 @@ bot.remove_command("help")
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(game=discord.Game(name="Hero Academia: Beyond"))
+    await bot.change_presence(game=discord.Game(name="with commands!"))
     print ("Ready when you are.")
     print ("I am running on " + bot.user.name)
     print ("With the ID: " + bot.user.id)
