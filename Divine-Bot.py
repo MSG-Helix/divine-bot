@@ -104,25 +104,6 @@ async def unban(ctx, user: discord.Member):
     print ("{} has been unbanned.".format(user.name))
 
 @bot.command(pass_context=True)
-async def GO_BEYOND(ctx):
-    await bot.say("**PLUS ULTRA!!!**")
-    print ("GO BEYOND, PLUS ULTRA!!!")
-
-@bot.command(pass_context=True)
-async def News(ctx):
-    embed = discord.Embed(title="Holy Mantra", description=" One of the main things I do for the game is create original characters for the Story Mode, and write those characters stories. I have been working with a few artists in the Helping Hand to draw these characters, and give them more life. So, thanks to @ILOforma, I can show sketches she has made for one of my pro heroes. A Buddhist monk living in peace with his mind; kind and gentle, yet hard as steel when called for. Here is the Enlightened Hero; Holy Mantra.", color=0x00ff00)
-    embed.set_footer(text="By Loki")
-    embed.set_author(name="New Character")
-    await bot.say(embed=embed)
-
-@bot.command(pass_context=True)
-async def news(ctx):
-    embed = discord.Embed(title="Holy Mantra", description=" One of the main things I do for the game is create original characters for the Story Mode, and write those characters stories. I have been working with a few artists in the Helping Hand to draw these characters, and give them more life. So, thanks to @ILOforma, I can show sketches she has made for one of my pro heroes. A Buddhist monk living in peace with his mind; kind and gentle, yet hard as steel when called for. Here is the Enlightened Hero; Holy Mantra.", color=0x00ff00)
-    embed.set_footer(text="By Loki")
-    embed.set_author(name="New Character")
-    await bot.say(embed=embed)
-
-@bot.command(pass_context=True)
 async def serverinfo(ctx):
     embed = discord.Embed(name="{}'s info".format(ctx.message.server.name), description="Here's what I could find.", color=0x00ff00)
     embed.set_author(name="Server information")
@@ -180,14 +161,14 @@ async def clear(ctx, amount=10):
 @bot.command(pass_context=True)
 async def Help(ctx):
     author = ctx.message.author
-    embed = discord.Embed(title="Commands", description=" .GO_BEYOND .Ping .Pong .Info [User] .Serverinfo .News", color=0x00ff00)
+    embed = discord.Embed(title="Commands", description=" .Ping .Pong .Info [User] .Serverinfo", color=0x00ff00)
     embed.set_author(name="Help")
     await bot.send_message(author, embed=embed)
 
 @bot.command(pass_context=True)
 async def help(ctx):
     author = ctx.message.author
-    embed = discord.Embed(title="Commands", description=" .GO_BEYOND .Ping .Pong .Info [User] .Serverinfo .News", color=0x00ff00)
+    embed = discord.Embed(title="Commands", description=" .Ping .Pong .Info [User] .Serverinfo", color=0x00ff00)
     embed.set_author(name="Help")
     await bot.send_message(author, embed=embed)
 
@@ -195,7 +176,7 @@ async def help(ctx):
 @commands.has_role("DIVINES")
 async def Admin_Help(ctx):
     author = ctx.message.author
-    embed = discord.Embed(title="Commands", description=" .Kick .Ban .Unban .GO_BEYOND .Ping .Pong .Info [User] .Serverinfo .News", color=0x00ff00)
+    embed = discord.Embed(title="Commands", description=" .Kick .Ban .Unban .Ping .Pong .Info [User] .Serverinfo", color=0x00ff00)
     embed.set_author(name="Help")
     await bot.send_message(author, embed=embed)
 
@@ -203,7 +184,7 @@ async def Admin_Help(ctx):
 @commands.has_role("DIVINES")
 async def Admin_help(ctx):
     author = ctx.message.author
-    embed = discord.Embed(title="Commands", description=" .Kick .Ban .Unban .GO_BEYOND .Ping .Pong .Info [User] .Serverinfo .News", color=0x00ff00)
+    embed = discord.Embed(title="Commands", description=" .Kick .Ban .Unban .Ping .Pong .Info [User] .Serverinfo", color=0x00ff00)
     embed.set_author(name="Help")
     await bot.send_message(author, embed=embed)
 
@@ -211,7 +192,7 @@ async def Admin_help(ctx):
 @commands.has_role("DIVINES")
 async def admin_help(ctx):
     author = ctx.message.author
-    embed = discord.Embed(title="Commands", description=" .Kick .Ban .Unban .GO_BEYOND .Ping .Pong .Info [User] .Serverinfo .News", color=0x00ff00)
+    embed = discord.Embed(title="Commands", description=" .Kick .Ban .Unban .Ping .Pong .Info [User] .Serverinfo", color=0x00ff00)
     embed.set_author(name="Help")
     await bot.send_message(author, embed=embed)
 
@@ -219,7 +200,7 @@ async def admin_help(ctx):
 @commands.has_role("DIVINES")
 async def Help_Admin(ctx):
     author = ctx.message.author
-    embed = discord.Embed(title="Commands", description=" .Kick .Ban .Unban .GO_BEYOND .Ping .Pong .Info [User] .Serverinfo .News", color=0x00ff00)
+    embed = discord.Embed(title="Commands", description=" .Kick .Ban .Unban .Ping .Pong .Info [User] .Serverinfo", color=0x00ff00)
     embed.set_author(name="Help")
     await bot.send_message(author, embed=embed)
 
@@ -227,7 +208,7 @@ async def Help_Admin(ctx):
 @commands.has_role("DIVINES")
 async def Help_admin(ctx):
     author = ctx.message.author
-    embed = discord.Embed(title="Commands", description=" .Kick .Ban .Unban .GO_BEYOND .Ping .Pong .Info [User] .Serverinfo .News", color=0x00ff00)
+    embed = discord.Embed(title="Commands", description=" .Kick .Ban .Unban .Ping .Pong .Info [User] .Serverinfo", color=0x00ff00)
     embed.set_author(name="Help")
     await bot.send_message(author, embed=embed)
 
@@ -235,7 +216,7 @@ async def Help_admin(ctx):
 @commands.has_role("DIVINES")
 async def help_admin(ctx):
     author = ctx.message.author
-    embed = discord.Embed(title="Commands", description=" .Kick .Ban .Unban .GO_BEYOND .Ping .Pong .Info [User] .Serverinfo .News", color=0x00ff00)
+    embed = discord.Embed(title="Commands", description=" .Kick .Ban .Unban .Ping .Pong .Info [User] .Serverinfo", color=0x00ff00)
     embed.set_author(name="Help")
     await bot.send_message(author, embed=embed)
 
