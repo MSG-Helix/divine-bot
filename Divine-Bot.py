@@ -160,14 +160,12 @@ async def clear(ctx, amount=10):
 
 @bot.command(pass_context=True)
 async def Help(ctx):
-    author = ctx.message.author
     embed = discord.Embed(title="Commands", description=" !!Ping !!Pong !!Info [User] !!Serverinfo", color=0x005ba9)
     embed.set_author(name="Help")
     await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
 async def help(ctx):
-    author = ctx.message.author
     embed = discord.Embed(title="Commands", description=" !!Ping !!Pong !!Info [User] !!Serverinfo", color=0x005ba9)
     embed.set_author(name="Help")
     await bot.say(embed=embed)
@@ -178,7 +176,7 @@ async def Admin_Help(ctx):
     author = ctx.message.author
     embed = discord.Embed(title="Commands", description=" !!Kick !!Ban !!Unban !!Ping !!Pong !!Info [User] !!Serverinfo", color=0x005ba9)
     embed.set_author(name="Help")
-    await bot.say(embed=embed)
+    await bot.send_message(author, embed=embed)
 
 @bot.command(pass_context=True)
 @commands.has_role("DIVINES")
