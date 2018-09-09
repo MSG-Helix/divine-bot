@@ -9,12 +9,12 @@ from itertools import cycle
 
 
 Client = discord.Client()
-bot = commands.Bot(command_prefix='~')
+bot = commands.Bot(command_prefix='!')
 bot.remove_command("help")
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(game=discord.Game(name="Type ~Help"))
+    await bot.change_presence(game=discord.Game(name="with commands!"))
     print ("Ready when you are.")
     print ("I am running on " + bot.user.name)
     print ("With the ID: " + bot.user.id)
@@ -160,13 +160,13 @@ async def clear(ctx, amount=10):
 
 @bot.command(pass_context=True)
 async def Help(ctx):
-    embed = discord.Embed(title="Commands", description=" !!Ping !!Pong !!Info [User] !!Serverinfo", color=0x005ba9)
+    embed = discord.Embed(title="Commands", description=" !Ping !Pong !Info [User] !Serverinfo", color=0x005ba9)
     embed.set_author(name="Help")
     await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
 async def help(ctx):
-    embed = discord.Embed(title="Commands", description=" !!Ping !!Pong !!Info [User] !!Serverinfo", color=0x005ba9)
+    embed = discord.Embed(title="Commands", description=" !Ping !Pong !Info [User] !Serverinfo", color=0x005ba9)
     embed.set_author(name="Help")
     await bot.say(embed=embed)
 
@@ -174,7 +174,7 @@ async def help(ctx):
 @commands.has_role("DIVINES")
 async def Admin_Help(ctx):
     author = ctx.message.author
-    embed = discord.Embed(title="Commands", description=" !!Kick !!Ban !!Unban !!Ping !!Pong !!Info [User] !!Serverinfo", color=0x005ba9)
+    embed = discord.Embed(title="Commands", description=" !Kick !Ban !Unban !Ping !Pong !Info [User] !Serverinfo", color=0x005ba9)
     embed.set_author(name="Help")
     await bot.send_message(author, embed=embed)
 
@@ -182,7 +182,7 @@ async def Admin_Help(ctx):
 @commands.has_role("DIVINES")
 async def Admin_help(ctx):
     author = ctx.message.author
-    embed = discord.Embed(title="Commands", description=" !!Kick !!Ban !!Unban !!Ping !!Pong !!Info [User] !!Serverinfo", color=0x005ba9)
+    embed = discord.Embed(title="Commands", description=" !Kick !Ban !Unban !Ping !Pong !Info [User] !Serverinfo", color=0x005ba9)
     embed.set_author(name="Help")
     await bot.send_message(author, embed=embed)
 
@@ -190,7 +190,7 @@ async def Admin_help(ctx):
 @commands.has_role("DIVINES")
 async def admin_help(ctx):
     author = ctx.message.author
-    embed = discord.Embed(title="Commands", description=" !!Kick !!Ban !!Unban !!Ping !!Pong !!Info [User] !!Serverinfo", color=0x005ba9)
+    embed = discord.Embed(title="Commands", description=" !Kick !Ban !Unban !Ping !Pong !Info [User] !Serverinfo", color=0x005ba9)
     embed.set_author(name="Help")
     await bot.send_message(author, embed=embed)
 
@@ -198,7 +198,7 @@ async def admin_help(ctx):
 @commands.has_role("DIVINES")
 async def Help_Admin(ctx):
     author = ctx.message.author
-    embed = discord.Embed(title="Commands", description=" !!Kick !!Ban !!Unban !!Ping !!Pong !!Info [User] !!Serverinfo", color=0x005ba9)
+    embed = discord.Embed(title="Commands", description=" !Kick !Ban !Unban !Ping !Pong !Info [User] !Serverinfo", color=0x005ba9)
     embed.set_author(name="Help")
     await bot.send_message(author, embed=embed)
 
@@ -206,7 +206,7 @@ async def Help_Admin(ctx):
 @commands.has_role("DIVINES")
 async def Help_admin(ctx):
     author = ctx.message.author
-    embed = discord.Embed(title="Commands", description=" !!Kick !!Ban !!Unban !!Ping !!Pong !!Info [User] !!Serverinfo", color=0x005ba9)
+    embed = discord.Embed(title="Commands", description=" !Kick !Ban !Unban !Ping !Pong !Info [User] !Serverinfo", color=0x005ba9)
     embed.set_author(name="Help")
     await bot.send_message(author, embed=embed)
 
@@ -214,7 +214,7 @@ async def Help_admin(ctx):
 @commands.has_role("DIVINES")
 async def help_admin(ctx):
     author = ctx.message.author
-    embed = discord.Embed(title="Commands", description=" !!Kick !!Ban !!Unban !!Ping !!Pong !!Info [User] !!Serverinfo", color=0x005ba9)
+    embed = discord.Embed(title="Commands", description=" !Kick !Ban !Unban !Ping !Pong !Info [User] !Serverinfo", color=0x005ba9)
     embed.set_author(name="Help")
     await bot.send_message(author, embed=embed)
 
